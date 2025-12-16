@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио веб-разработчика">
+    <title>Портфолио | [Имя Фамилия]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <img src="assets/img1.jpg" alt="Фото" class="avatar">
+                <h1>Варвара Куркубет</h1>
+                <p>Веб-разработчик & UI/UX дизайнер</p>
+                <button id="theme-toggle" class="theme-btn">Сменить тему</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <!-- Обо мне -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>Обо мне</h2>
+                <p>Привет! Я веб-разработчик с опытом создания современных адаптивных сайтов и веб-приложений.</p>
+                <p>Владею HTML, CSS, JavaScript, React, Node.js. Люблю чистый код и удобные интерфейсы.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-text">Завершенных проектов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-text">Года опыта</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-text">Довольных клиентов</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навыки (в виде таблицы) -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2>Технические навыки</h2>
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Технология</th>
+                            <th>Уровень</th>
+                            <th>Год начала</th>
+                            <th>Проектов</th>
+                            <th>Статус</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="skills-table-body">
+                        <!-- Заполняется через JavaScript -->
+                    </tbody>
+                </table>
+                <button id="add-skill-btn" class="btn">Добавить навык</button>
+            </div>
+        </section>
+
+        <!-- Портфолио -->
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2>Мои работы</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="web">Веб-сайты</button>
+                    <button class="filter-btn" data-filter="design">Дизайн</button>
+                    <button class="filter-btn" data-filter="mobile">Мобильные</button>
+                </div>
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Заполняется через JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="section contacts">
+            <div class="container">
+                <h2>Свяжитесь со мной</h2>
+                <div class="contact-info">
+                    <p>📧 example@email.com</p>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>📍 Москва, Россия</p>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Ваш email" required>
+                    <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025. Все права защищены.</p>
+            <div class="social">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="js/script.js"></script>
+</body>
+</html>
